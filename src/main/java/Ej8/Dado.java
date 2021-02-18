@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package daw.enrique.t6;
+package Ej8;
 
 /**
  *
  * @author enrique
  */
-public class Ej7 {
+public class Dado {
     
 }
