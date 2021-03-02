@@ -15,6 +15,8 @@ package Ej8;
  *
  * @author enrique
  */
-public class Azar {
-
+public abstract class Azar {
+    protected int posibilidades;
+    
+    public abstract int lanzar();
 }

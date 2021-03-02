@@ -11,12 +11,12 @@ import java.util.Random;
  *
  * @author enrique
  */
-public class Dado extends Azar {
+public class Moneda extends Azar{
     Random aleatorio = new Random();
 
     @Override
     public int lanzar() {
-        int valor = aleatorio.nextInt(6)+1;
+        int valor = aleatorio.nextInt(2)+1;
         
         return valor;
     }

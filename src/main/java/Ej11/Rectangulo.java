@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ej8;
-
-import java.util.Random;
+package Ej11;
 
 /**
  *
  * @author enrique
  */
-public class Dado extends Azar {
-    Random aleatorio = new Random();
+public class Rectangulo extends Figura {
+
+    public Rectangulo(int base, int altura) {
+        super(base, altura);
+    }
 
     @Override
-    public int lanzar() {
-        int valor = aleatorio.nextInt(6)+1;
-        
-        return valor;
+    public int calcularArea() {
+        int area = base * altura;
+
+        return area;
     }
-    
+
 }
