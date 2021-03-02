@@ -5,12 +5,14 @@
  */
 package Ej15;
 
+import java.util.Random;
+
 /**
  *
  * @author enrique
  */
-public class Senador extends Legislador{
-    
+public class Senador extends Legislador {
+
     private double complemento;
 
     public Senador(double complemento, String provincia, String partidoPolitico, String nombre, String apellidos) {
@@ -25,10 +27,13 @@ public class Senador extends Legislador{
     public void setComplemento(double complemento) {
         this.complemento = complemento;
     }
-    
+
     @Override
     public int getCamara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Random ale = new Random();
+        int camara = ale.nextInt(6) + 1;;
+
+        return camara;
     }
 
     @Override
@@ -37,9 +42,4 @@ public class Senador extends Legislador{
         return atrisup + "Senador{" + "complemento=" + complemento + '}';
     }
 
-    
-    
-    
-    
-    
 }

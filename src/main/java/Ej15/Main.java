@@ -20,22 +20,23 @@ public class Main {
         diputados.add(new Diputado(63, "Madrid", "E", "Antonio", "Garcia"));
         diputados.add(new Diputado(5, "Valencia", "E", "Isabel", "Martín"));
 
-        
         ArrayList<Senador> senadores = new ArrayList<>();
         senadores.add(new Senador(45, "Cadiz", "P", "Daniel", "Sánchez"));
         senadores.add(new Senador(45, "Malaga", "E", "Juan", "Díaz"));
         senadores.add(new Senador(45, "Madrid", "I", "Laura", "López"));
-        senadores.add(new Senador(45, "Valencia", "C", "Ana", "García"));        
+        senadores.add(new Senador(45, "Valencia", "C", "Ana", "García"));
 
         System.out.println("Diputados");
         for (Diputado f : diputados) {
             System.out.println(f.toString());
+            System.out.println(f.getCamara());
         }
-        
+
         System.out.println("");
         System.out.println("Senadores");
-        for(Senador f : senadores){
+        for (Senador f : senadores) {
             System.out.println(f.toString());
+            System.out.println(f.getCamara());
         }
     }
 }

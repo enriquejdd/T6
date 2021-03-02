@@ -18,7 +18,7 @@ package Ej7;
  *
  * @author enrique
  */
-public class Trabajador {
+public abstract class Trabajador {
 
     private String nombre;
     private String apellido1;
