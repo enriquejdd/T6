@@ -55,12 +55,8 @@ public abstract class Cuenta {
         this.saldo = saldo;
     }
 
-    public void actualizarSaldo(double c) {
+    public abstract void actualizarSaldo(double c);
 
-    }
-
-    public void retirar(double c) {
-
-    }
+    public abstract void retirar(double c);
 
 }

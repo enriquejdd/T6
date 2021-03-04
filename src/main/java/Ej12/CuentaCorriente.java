@@ -45,8 +45,8 @@ public class CuentaCorriente extends Cuenta {
 
     @Override
     public void retirar(double c) {
-        double sal = CuentaCorriente.super.getSaldo();
-        if (sal - c < saldoMin) {
+        double sal = this.getSaldo();
+        if ((sal - c) < saldoMin) {
 
         } else {
             double saldoActualizado = sal - c;

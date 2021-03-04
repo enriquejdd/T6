@@ -38,7 +38,7 @@ public class CuentaAhorro extends Cuenta{
     
     @Override
     public void actualizarSaldo(double c) {
-        double sal = CuentaAhorro.super.getSaldo();        
+        double sal = this.getSaldo();        
         double saldoActualizado = (sal + (sal*interes))-comisionAnual;
         
         setSaldo(saldoActualizado);
@@ -47,7 +47,7 @@ public class CuentaAhorro extends Cuenta{
 
     @Override
     public void retirar(double c) {
-        double sal = CuentaAhorro.super.getSaldo();        
+        double sal = this.getSaldo();        
         double saldoActualizado = sal-c;
         
         setSaldo(saldoActualizado);
