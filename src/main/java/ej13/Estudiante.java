@@ -27,12 +27,12 @@ public class Estudiante extends Persona{
 
     @Override
     public String toString() {
-        return "Estudiante{" + "idEstudiante=" + idEstudiante + '}';
+        return super.toString() + "Estudiante{" + "idEstudiante=" + idEstudiante + '}';
     }
 
     @Override
     public void identificate() {
-        System.out.println("La persona se identifica como Estidante");
+        System.out.println("La persona se identifica como Estudiante");
     }
     
     

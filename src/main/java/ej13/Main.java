@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author enrique
  */
-public class main {
+public class Main {
     public static void main(String[] args) {
         Direccion d1 = new Direccion("Calle Fuente de María Gil, 30", "Estepona", 29680, "España");
         
@@ -30,5 +30,18 @@ public class main {
         personas.add(e4);
         personas.add(p1);
         personas.add(p2);
+        
+        for (Persona persona : personas) {
+            persona.identificate();
+            persona.toString();
+            
+            if(persona instanceof Profesor){
+                ((Profesor) persona).getEspecialidad();
+            }
+            if(persona instanceof Estudiante){
+                ((Estudiante) persona).getIdEstudiante();
+            }
+            System.out.println("");
+        }
     }
 }
