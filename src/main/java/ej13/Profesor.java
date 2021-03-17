@@ -32,7 +32,7 @@ public class Profesor extends Persona{
 
     @Override
     public void identificate() {
-        System.out.println("La persona se identifica como Profesor");
+        System.out.println("La persona" + this.getNombre() + " se identifica como Profesor");
     }
     
     

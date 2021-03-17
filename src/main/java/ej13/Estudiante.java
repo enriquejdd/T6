@@ -32,7 +32,7 @@ public class Estudiante extends Persona{
 
     @Override
     public void identificate() {
-        System.out.println("La persona se identifica como Estudiante");
+        System.out.println("La persona " + this.getNombre() + " se identifica como Estudiante");
     }
     
     
